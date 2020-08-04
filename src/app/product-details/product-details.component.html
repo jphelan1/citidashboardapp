@@ -1,0 +1,10 @@
+<h2>Personally Curated For You.</h2>
+
+
+    <div *ngIf="product">
+      <h3>{{ product.name }}</h3>
+      <h4>{{ product.price | currency }}</h4>
+      <p>{{ product.description }}</p>
+
+      <button (click)="addToCart(product)">Save for Later</button>
+    </div>

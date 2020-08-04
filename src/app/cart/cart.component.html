@@ -1,0 +1,35 @@
+<h3>Citi Financial Advisor Services</h3>
+
+<p>
+  <a routerLink="/shipping">Launch ChatBox</a>
+</p>
+
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }} </span>
+  <span>{{ item.price | currency }}</span>
+</div>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Email
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+ <div>
+    <label for="address">
+      What can we help you with?
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+  <button class="button" type="submit">Submit</button>
+
+</form>

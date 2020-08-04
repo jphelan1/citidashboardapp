@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Retirement",
+    "type 2": 1
+  },
+  {
+    "type": "Credit Score",
+    "type 2": 2
+  },
+  {
+    "type": "Saving to buy a home, car, etc.",
+    "type 2": 3
+  },
+  {
+    "type": "Children's Education Fund",
+    "type 2": 3
+  },
+  {
+    "type": "Starting a Business",
+    "type 2": 3
+  },
+  {
+    "type": "Other",
+    "type 2": 3
+  }
+]

@@ -1,0 +1,8 @@
+<h3>Let's Get Started!</h3>
+
+<h2>What financial services do you need help with?</h2>
+
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ shipping.type }}</span>
+  <span>{{ shipping.price | currency }}</span>
+</div>
