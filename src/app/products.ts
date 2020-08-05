@@ -5,14 +5,14 @@ export const products = [
     description: 'A look at resources to help  you'
   },
   {
-    name: 'Short Term Action Plan',
+    name: 'FAQ',
     //price: 699,
-    description: 'Short Term Plan'
+    description: 'Most Frequently Asked Questions'
   },
   {
-    name: 'Long Term Plan',
+    name: 'ChatBox',
     //price: 299,
-    description: 'Long term plan'
+    description: 'Speak with financial advisor now.'
   }
 ];
 
