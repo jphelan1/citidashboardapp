@@ -30,7 +30,7 @@ app.post('/helpreqs', (req, res) => {
 })
  
 mongoose.connect(
-    'mongodb+srv://zsprint:<pwd>@cluster0.sad5j.mongodb.net/financialDashboard?retryWrites=true&w=majority',  { useNewUrlParser: true }
+    'mongodb+srv://zsprint:zsprint@cluster0.sad5j.mongodb.net/financialDashboard?retryWrites=true&w=majority',  { useNewUrlParser: true }
 ).then(() => {
     console.log('Database connection successful')
   })
