@@ -1,1 +1,17 @@
+.row {
+  box-sizing: border-box;
+}
 
+.column {
+  float: left;
+  width: 33.33%;
+  height: 300px;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: red;
+}
