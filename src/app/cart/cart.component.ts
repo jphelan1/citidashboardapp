@@ -41,7 +41,10 @@ export class CartComponent implements OnInit {
     this.checkoutForm.reset();
 
     //customerData has all form data i.e. email, help, name
-    console.log(customerData.name);
+    //console.log(customerData.name);
+
+    this.cartService.postHelpreqs(customerData);
+  
 
     console.warn('Your order has been submitted', customerData);
   }

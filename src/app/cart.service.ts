@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,6 +28,12 @@ export class CartService {
   getShippingPrices() {
     return this.http.get('/assets/shipping.json');
   }
+
+  //new code for help req form
+  postHelpreqs(helpreqData) {
+    this.http.post('http://localhost:3000/helpreqs', helpreqData).subscribe(res => {
+    });
+}
   
 }
 
