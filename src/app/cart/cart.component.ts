@@ -12,13 +12,22 @@ export class CartComponent implements OnInit {
   items;
   checkoutForm;
 
+  //new vars
+  name;
+  email;
+  help;
+
   constructor(
     private cartService: CartService,
     private formBuilder: FormBuilder,
   ) {
     this.checkoutForm = this.formBuilder.group({
+      //name: '',
+      //address: ''
+
       name: '',
-      address: ''
+      email: '',
+      help: ''
     });
   }
 
@@ -30,6 +39,9 @@ export class CartComponent implements OnInit {
     // Process checkout data here
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
+
+    //customerData has all form data i.e. email, help, name
+    console.log(customerData.name);
 
     console.warn('Your order has been submitted', customerData);
   }

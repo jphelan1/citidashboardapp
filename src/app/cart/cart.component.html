@@ -1,8 +1,8 @@
 <h3>Citi Financial Advisor Services</h3>
 
-<p>
+<!--<p>
   <a routerLink="/shipping">Launch ChatBox</a>
-</p>
+</p>  -->
 
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }} </span>
@@ -19,16 +19,16 @@
   </div>
 
   <div>
-    <label for="address">
+    <label for="email">
       Email
     </label>
-    <input id="address" type="text" formControlName="address">
+    <input id="email" type="text" formControlName="email">
   </div>
  <div>
-    <label for="address">
+    <label for="help">
       What can we help you with?
     </label>
-    <input id="address" type="text" formControlName="address">
+    <input id="help" type="text" formControlName="help">
   </div>
   <button class="button" type="submit">Submit</button>
 
