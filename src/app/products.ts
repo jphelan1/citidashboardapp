@@ -2,18 +2,15 @@ export const products = [
   {
     name: 'Resources',
     //price: 799,
-    description: 'A look at resources to help  you'
+    description: 'A look at resources to help  you',
+    image: 'yes'
   },
   {
-    name: 'Short Term Action Plan',
+    name: 'FAQ',
     //price: 699,
-    description: 'Short Term Plan'
+    description: 'Frequently asked questions'
   },
-  {
-    name: 'Long Term Plan',
-    //price: 299,
-    description: 'Long term plan'
-  }
+  
 ];
 
 
