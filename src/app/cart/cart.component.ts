@@ -9,10 +9,10 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
+
+  // Initialize Vars
   items;
   checkoutForm;
-
-  //new vars
   name;
   email;
   help;
@@ -20,11 +20,9 @@ export class CartComponent implements OnInit {
   constructor(
     private cartService: CartService,
     private formBuilder: FormBuilder,
-  ) {
+             ) 
+    {
     this.checkoutForm = this.formBuilder.group({
-      //name: '',
-      //address: ''
-
       name: '',
       email: '',
       help: ''
@@ -35,17 +33,14 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.getItems();
   }
 
+  // Sends completed form to Post endpoint
   onSubmit(customerData) {
-    // Process checkout data here
+    // Resets form
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
 
-    //customerData has all form data i.e. email, help, name
-    //console.log(customerData.name);
-
+    // Post request with form data
     this.cartService.postHelpreqs(customerData);
-  
-
     console.warn('Your order has been submitted', customerData);
   }
 }

@@ -29,7 +29,7 @@ export class CartService {
     return this.http.get('/assets/shipping.json');
   }
 
-  //new code for help req form
+  // POST request to Express server endpoint with the From Data
   postHelpreqs(helpreqData) {
     this.http.post('http://localhost:3000/helpreqs', helpreqData).subscribe(res => {
     });
