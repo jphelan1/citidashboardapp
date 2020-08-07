@@ -9,27 +9,27 @@
   <span>{{ item.price | currency }}</span>
 </div>
 
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<div class ="row">
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name" placeholder="Enter name" class="form-control">
+    </div>
 
+    <div>
+      <label for="email">
+        Email
+      </label>
+      <input id="email" type="text" formControlName="email" placeholder="Enter email" class="form-control">
+    </div>
   <div>
-    <label for="name">
-      Name
-    </label>
-    <input id="name" type="text" formControlName="name">
-  </div>
-
-  <div>
-    <label for="email">
-      Email
-    </label>
-    <input id="email" type="text" formControlName="email">
-  </div>
- <div>
-    <label for="help">
-      What can we help you with?
-    </label>
-    <input id="help" type="text" formControlName="help">
-  </div>
-  <button class="button" type="submit">Submit</button>
-
-</form>
+      <label for="help">
+        What can we help you with?
+      </label>
+      <input id="help" type="text" formControlName="help" placeholder="Enter your help query" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!checkoutForm.valid">Submit</button>
+  </form>
+</div>

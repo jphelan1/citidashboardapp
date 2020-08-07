@@ -13,18 +13,15 @@ export class CartComponent implements OnInit {
   checkoutForm;
 
   //new vars
-  name;
-  email;
-  help;
+  name: string;
+  email : string;
+  help : string;
 
   constructor(
     private cartService: CartService,
     private formBuilder: FormBuilder,
   ) {
     this.checkoutForm = this.formBuilder.group({
-      //name: '',
-      //address: ''
-
       name: '',
       email: '',
       help: ''
