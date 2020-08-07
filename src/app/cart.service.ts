@@ -29,6 +29,10 @@ export class CartService {
     return this.http.get('/assets/shipping.json');
   }
 
+  getQuestions() {
+    return this.http.get('/assets/questions.json');
+  }
+
   //new code for help req form
   postHelpreqs(helpreqData) {
     this.http.post('http://localhost:3000/helpreqs', helpreqData).subscribe(res => {

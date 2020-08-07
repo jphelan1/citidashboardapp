@@ -17,6 +17,6 @@ export class FAQComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.shippingCosts = this.cartService.getShippingPrices();
+    this.shippingCosts = this.cartService.getQuestions();
   }
 }
