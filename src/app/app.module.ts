@@ -11,6 +11,7 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { FAQComponent } from './faq/faq.component';
 
 @NgModule({
   imports: [
@@ -19,9 +20,10 @@ import { ShippingComponent } from './shipping/shipping.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
+      { path: 'resources', component: ProductDetailsComponent },
+      { path: 'financial-advisor-form', component: CartComponent },
+      { path: 'FAQ', component: FAQComponent },
+      { path: 'survey', component: ShippingComponent },
     ])
   ],
   declarations: [
@@ -30,6 +32,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductListComponent,
     ProductDetailsComponent,
     CartComponent,
+    FAQComponent,
     ShippingComponent
   ],
   bootstrap: [ AppComponent ],

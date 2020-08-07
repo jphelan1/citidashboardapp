@@ -28,33 +28,25 @@
 
 
 <div class = "row">
-  <div *ngFor="let product of products; index as productId">
-
-    <h3>
-      <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-        {{ product.name }}
-      </a>
-    </h3>
-
-    <p *ngIf="product.description">
-      Description: {{ product.description }}
-    </p>
-
-
-  </div> 
-
-  
-
   <h3>
-    <a routerLink="/shipping"> Launch ChatBox</a>
+    <a routerLink="/resources"> Resources</a>
   </h3>
   <p>
-    Description: A chatbot to answer your financial questions
+    Description: A look at your personalized resources to help you
+  </p>
+  
+  <h3>
+    <a routerLink="/FAQ"> FAQ</a>
+  </h3>
+  <p>
+    Description: Frequently Asked Questions
   </p>
 
-  
-
- 
-
+  <h3>
+    <a routerLink="/survey"> Launch Personal Financial Survey</a>
+  </h3>
+  <p>
+    Description: A quick survey to answer your financial questions
+  </p>
 </div>
 </html>
